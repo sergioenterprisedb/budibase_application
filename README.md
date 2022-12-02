@@ -7,6 +7,7 @@ The application has been developed with [Budibase](https://budibase.com).
 - Insert application data
 - Load Balancer (If using Kubernetes on Docker, install Metallb)
 - [EDB Postgres for Kubernetes](https://www.enterprisedb.com/products/edb-postgres-for-kubernetes) or [CloudNativePG](https://cloudnative-pg.io)
+![WAT](/mages/budibase_wat.png)
 
 # How to install Budibase
 Run Budibase on your own self-hosted environment.
