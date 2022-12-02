@@ -1,12 +1,15 @@
 # Web Application Test (WAT)
 This is a web application that can be used for demos with EDB Postgres for Kubernetes or CloudNativePG. It is a simple application that contains several test data.
 The application has been developed with [Budibase](https://budibase.com).
+You can easly show the behaviour of a switchover and failover with an streaming replication.
 
 # Prerequisites
+- (Install CloudNativePG or EDB Postgres for Kubernetes demo](https://github.com/sergioenterprisedb/kubecon2022-demo)
 - [Budibase](https://budibase.com)
 - Insert application data
-- Load Balancer (If using Kubernetes on Docker, install Metallb)
+- Load Balancer (If using Kubernetes on Docker, install [Metallb](https://metallb.universe.tf/installation/)
 - [EDB Postgres for Kubernetes](https://www.enterprisedb.com/products/edb-postgres-for-kubernetes) or [CloudNativePG](https://cloudnative-pg.io)
+
 ![WAT](/images/budibase_wat.png)
 
 # How to install Budibase
