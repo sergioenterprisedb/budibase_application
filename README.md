@@ -6,9 +6,9 @@ You can easly show the behaviour of a switchover and failover with an streaming 
 # Prerequisites
 - This application use [EDB Postgres for Kubernetes](https://www.enterprisedb.com/products/edb-postgres-for-kubernetes) or [CloudNativePG](https://cloudnative-pg.io)
 - [Install CloudNativePG or EDB Postgres for Kubernetes demo](https://github.com/sergioenterprisedb/kubecon2022-demo)
-- [Budibase](https://budibase.com)
-- Insert application data
-- Load Balancer (If using Kubernetes on Docker, install [Metallb](https://metallb.universe.tf/installation/))
+- Install [Budibase](https://github.com/sergioenterprisedb/budibase_application#how-to-install-budibase)
+- [Install application data](https://github.com/sergioenterprisedb/budibase_application#install-application-data)
+- Configure PostgreSQL Database IP address: Configure Load Balancer (If using Kubernetes on Docker, install [Metallb](https://metallb.universe.tf/installation/))
 
 ![WAT](/images/budibase_wat.png)
 
@@ -91,7 +91,7 @@ There are two users:
 - app@test.com: Used to connect the application.
 - test@test.com: This user's role grants admin access to all apps.
 
-# IP connection address
+# Configure PostgreSQL Database IP address
 By default, this application will connect to IP: 10.106.209.220
 This IP is a virtual load balancer forward traffic to [cluster-example-rw](https://www.enterprisedb.com/docs/postgres_for_kubernetes/latest/architecture/) service created by CloudNativPG, which connect to the only primary instance of the cluster.
 
