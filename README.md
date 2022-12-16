@@ -47,14 +47,17 @@ sudo mv cli-linux /usr/local/bin/budi
 docker volume rm budibase_application_couchdb3_data
 docker volume rm budibase_application_redis_data
 docker volume rm budibase_application_minio_data
-
+```
+```
 budi hosting --init
+```
+```
 bb-alert: No JWT Secret supplied, cannot configure JWT strategy
 ? This will create multiple files in current directory, should continue? Yes
 ? Please enter the port on which you want your installation to run:  10000
 Configuration has been written successfully - please check /Users/sergio.romera/Documents/GitHub/budibase_application/.env for more details.
 ```
-## tart budibase
+## Start budibase
 ```
 budi hosting --start
 ```
