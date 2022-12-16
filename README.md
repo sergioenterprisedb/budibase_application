@@ -94,6 +94,8 @@ There are two users:
 # Configure PostgreSQL Database IP address
 By default, this application will connect to IP: 10.106.209.220
 This IP is a virtual load balancer forward traffic to [cluster-example-rw](https://www.enterprisedb.com/docs/postgres_for_kubernetes/latest/architecture/) service created by CloudNativPG, which connect to the only primary instance of the cluster.
+You can change the database IP address in the appplication:
+![Database IP Address](/images/database_ip_configuration.png)
 
 # Budibase URL
 [http://localhost:10000](http://localhost:10000)
