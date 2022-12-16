@@ -4,11 +4,11 @@ The application has been developed with [Budibase](https://budibase.com).
 You can easly show the behaviour of a switchover and failover with an streaming replication.
 
 # Prerequisites
+- This application use [EDB Postgres for Kubernetes](https://www.enterprisedb.com/products/edb-postgres-for-kubernetes) or [CloudNativePG](https://cloudnative-pg.io)
 - [Install CloudNativePG or EDB Postgres for Kubernetes demo](https://github.com/sergioenterprisedb/kubecon2022-demo)
 - [Budibase](https://budibase.com)
 - Insert application data
 - Load Balancer (If using Kubernetes on Docker, install [Metallb](https://metallb.universe.tf/installation/))
-- [EDB Postgres for Kubernetes](https://www.enterprisedb.com/products/edb-postgres-for-kubernetes) or [CloudNativePG](https://cloudnative-pg.io)
 
 ![WAT](/images/budibase_wat.png)
 
@@ -41,7 +41,7 @@ chmod +x cli-linux
 sudo mv cli-linux /usr/local/bin/budi
 ```
 
-# Initiate budibase
+## Initiate budibase
 ```
 # Remove volume if exists
 docker volume rm budibase_application_couchdb3_data
@@ -54,18 +54,18 @@ bb-alert: No JWT Secret supplied, cannot configure JWT strategy
 ? Please enter the port on which you want your installation to run:  10000
 Configuration has been written successfully - please check /Users/sergio.romera/Documents/GitHub/budibase_application/.env for more details.
 ```
-# Start budibase
+## tart budibase
 ```
 budi hosting --start
 ```
 
-# Other commands
+## Other Budibase commands
 ```
 budi hosting --stop
 budi backups --export --env .env
 ```
 
-# Install budibase application Application from command line interface (CLI)
+## Install Budibase application Application from command line interface (CLI)
 ```
 budi backups --import budibase_application/EDB_My_App.gz --env .env
 ```
@@ -77,7 +77,7 @@ MinIO Import
 Import complete
 ```
 
-# Install budibase application from GUI
+## Install Budibase application from GUI
 After install budibase, you can import WAT application:
 - Connect to http://localhost:10000
 - Create new app -> Import app -> Select Application file
